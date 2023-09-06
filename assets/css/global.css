@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+main,
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mensagem {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+#mensage {
+    width: 100%;
+    margin: 0;
+}
+
+.app-container {
+    height: 100vh;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.mainHeader-title {
+    width: 95%;
+}
+
+.subtitle-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.alternate-login .alternate-btn {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-text {
+    padding: .9rem;
+    margin-top: 1rem;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.input-text:focus{
+    outline: none;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 1rem;
+}
+
+.btn-entrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn {
+    margin-top: 1rem;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(5, 125, 129);
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.link {
+    width: 88%;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: rgb(7, 105, 165);
+    font-weight: 700;
+}
+
+.alternate-login {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.alternate-btn {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-login {
+    padding: .5rem;
+    border-radius: 30px;
+    width: 90%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+.btn:hover{
+    background-color: rgb(5, 88, 91);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.icon{
+    width: 230px;
+    height: 60px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    .main-header {
+
+        width: 100%;
+    }
+
+    .mainHeader-title {
+        width: 80%;
+    }
+
+    .app-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        box-shadow: 1px 2px 10px black;
+        width: 400px;
+        border-radius: 10px;
+        padding: 1rem;
+
+    }
+
+}
+
+
+@media screen and (min-width: 500px) {
+    .main-header {
+
+        width: 100%;
+    }
+
+    .mainHeader-title {
+        width: 80%;
+    }
+
+    .app-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+
+        width: 400px;
+        border-radius: 10px;
+        padding: 1rem;
+
+    }
+
+    .btn-login {
+        margin-bottom: 0.5rem;
+    }
+
+
+}

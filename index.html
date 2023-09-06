@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/edit.css">
+    <link rel="stylesheet" href="/assets/css/cadastro.css">
+</head>
+<body>
+    <div class="app-container" id="edit-tela">
+        <!-- <header class="main-header">
+            <div class="mainHeader-title">
+            <img src="/assets/icons/placeholderIcon.png" class ="icon" alt="Icone">
+            </div>
+        </header> -->
+        <div class="main-main">
+        <main class="main-usuarios">
+            <header class="subtitle-header">
+                <div class="header-content2">
+                <h2>Lista de Usuarios </h2>
+                <div class="msg-bemvindo">
+                    
+                    <button type="button" class="btnCad" id="cadastarOutro">Cadastrar Novo Usuario</button>
+                </div>
+                
+            </div>
+            </header>
+            <div class="tabela-users" id="tabelaUser">
+            <!-- <table id="tabela">
+                <tr>
+                  <th>Nome</th>
+                  <th>Senha</th>
+                  <th>ações</th>
+                </tr>
+                <tr>
+                  <td>January</td>
+                  <td>$100</td>
+                  <td class="icons-table"> <img src="/assets/icons/pencil.svg" alt="lapis" class="icon-edit"> <img src="/assets/icons/trash.svg" alt="lixeira" class="icon-edit" ></td>
+                </tr>
+              </table> -->
+
+              
+            </div>
+        </main>
+    </div>
+    </div>
+                         <!-- tela cadastro -->
+    <div class="app-container" id="tela-cadastro">
+        <!-- <header class="main-header">
+            <div class="mainHeader-title">
+            <img src="/assets/icons/placeholderIcon.png" class ="icon" alt="Icone">
+            </div>
+        </header>  -->
+        <main>
+            <header class="subtitle-header">
+                <div class="header-content">
+                <h1>Crie um cadastro !</h1>
+            </div>
+            </header>
+            <form>
+            <div class="inputs">
+                <label for="name-cadastro" id="label-nome" class="labels">Nome</label>
+                <input type="text" class="input-text" id="name-cadastro" maxlength="15">
+                <label for="name-cadastro" id="label-senha" class="labels">Senha</label>
+                <input type="number"  class="input-text" id="senha-cadastro"  maxlength="15" minlength="8">
+                <p id="accept">Ao clicar em Cadastrar Usuario, você aceita o Contrato do Usuário, a Política de Privacidade e a Política de Cookies do placeholder.</p>
+            </div>
+           
+            <div class="btn-entrar">
+                <button class="btn" type="button" id="btn-cadastro">Cadastrar Usuario</button>
+            </div>
+            
+        </form>
+        <div class="alternate-login">
+         <p>ou</p>
+         <hr>
+         <div class="alternate-btn">
+            <button class="btn-login">Continuar com placeholder</button>
+         </div>
+        </div>
+        <div class="mensagem">
+        <p id="mensage">Voltar para tela de usuarios <a href="#edit-tela">cadastrados</a></p>
+        </div>
+        </main>
+    </div>
+
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/cadastro.js"></script>
+</body>
+</html>
