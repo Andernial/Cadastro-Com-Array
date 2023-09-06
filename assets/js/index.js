@@ -1,3 +1,4 @@
+//  criando classe usuarios //
 class User{
     constructor(nome,senha){
         this.nome = nome
@@ -9,14 +10,11 @@ class User{
 
 const users = []
              
-
-
-
 const btnCad = document.getElementById('cadastarOutro') 
 
 const tabela = document.getElementById('tabelaUser')
 
-
+// função para criar os usuarios e empurrar eles para dentro do array
 function criaUser(nome,senha) {
 
         let newUser = new User(nome,senha)
@@ -26,7 +24,7 @@ function criaUser(nome,senha) {
     
     
 }
-
+// essa função retorna o que vai ser escrito dentro do html //
 function preencheTable(user,index){
     return ` <table id="tabela">
     <tr>
@@ -44,6 +42,7 @@ function preencheTable(user,index){
 
 }
 
+// essa função faz aparecer na tela o que esta dentro do array de usuarios // 
 function teste(){
       tabela.innerHTML = ""
       users.forEach((user,index) =>{
@@ -53,6 +52,7 @@ function teste(){
 
 
 }
+// essa função edita o usuario de acordo com o index do botão clicado//
 
 function editarUsuario(index){
       const novoNome = prompt('Digite a alteração no nome (minimo: 4 caracteres|máximo: 15 caracteres)')
@@ -67,6 +67,7 @@ function editarUsuario(index){
       }
 }
 
+// botão que leva para tela de cadastro //
 btnCad.addEventListener('click', ()=>{
     location.href = "#tela-cadastro"
     // tabela.innerHTML = ""
@@ -85,7 +86,7 @@ btnCad.addEventListener('click', ()=>{
     }
 }
     
-
+// botao que cadastra usuario novo e ativa as outras funções para apresentar tudo na tela //
 const btn = document.getElementById('btn-cadastro')
 
 btn.addEventListener('click', ()=>{
