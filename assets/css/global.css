@@ -141,7 +141,10 @@ h2 {
     height: 60px;
 }
 
-
+.edit{
+    display: none;
+    width: 90%;
+}
 
 
 
