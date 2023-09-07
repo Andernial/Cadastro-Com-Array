@@ -18,7 +18,7 @@ table, th, td {
 }
 
   .tabela-users{
-    
+    width: 100%;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -32,9 +32,13 @@ table, th, td {
     width: 100%;
     border-collapse: collapse;
   }
-  #tabela td{
-    width: 50%;
+  .td-tabela{
+    
+    white-space: nowrap;
+    
+    
   }
+  
 
   .icons-table{
     width: 4rem;
@@ -48,6 +52,7 @@ table, th, td {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     height: 100vh;
   }
 

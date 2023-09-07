@@ -34,7 +34,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
 }
 
 .mainHeader-title {
@@ -45,7 +45,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .app-container {
@@ -74,10 +74,14 @@ h2 {
     width: 80%;
     border-radius: 5px;
     font-size: 1.2rem;
+
 }
-.input-text:focus{
+
+
+.input-text:focus {
     outline: none;
 }
+
 .header-content {
     display: flex;
     flex-direction: column;
@@ -131,19 +135,30 @@ h2 {
     margin-bottom: 1rem;
     background-color: transparent;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: rgb(5, 88, 91);
     transition: 0.2s;
     cursor: pointer;
 }
-.icon{
+
+.icon {
     width: 230px;
     height: 60px;
 }
 
-.edit{
+.edit {
     display: none;
     width: 90%;
+
+}
+
+.mostrar-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
 }
 
 
@@ -167,7 +182,7 @@ h2 {
 
     main {
         box-shadow: 1px 2px 10px black;
-        width: 400px;
+        width: 430px;
         border-radius: 10px;
         padding: 1rem;
 
@@ -194,7 +209,7 @@ h2 {
 
     main {
 
-        width: 400px;
+        width: 430px;
         border-radius: 10px;
         padding: 1rem;
 

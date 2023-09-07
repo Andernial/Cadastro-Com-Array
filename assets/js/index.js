@@ -33,12 +33,12 @@ function preencheTable(user, index) {
       <th>ações</th>
     </tr>
     <tr>
-      <td>
-        <span id="nome-${index}">${user.nome}</span>
-        <input type="text" id="input-nome-${index}" maxlength="15" class="edit">
+      <td class="td-tabela">
+        <span class="nome-usuario" id="nome-${index}">${user.nome}</span>
+        <input type="text"  id="input-nome-${index}" maxlength="15" class="edit">
       </td>
-      <td><span id="senha-${index}">${user.senha}</span>
-      <input type="password" id="input-senha-${index}" maxlength="15" class="edit">
+      <td class="td-tabela"><span id="senha-${index}">${user.senha}</span>
+      <input type="text" id="input-senha-${index}" maxlength="15" class="edit">
       </td>
       <td class="icons-table"> <img src="/assets/icons/pencil.svg" alt="lapis" class="icon-edit" onclick="editarUsuario(${index})"> <img src="/assets/icons/trash.svg" alt="lixeira" class="icon-edit" onclick="excluirUsuario(${index})"></td>
     </tr>
@@ -73,13 +73,17 @@ function editarUsuario(index) {
 
   inputNome.value = users[index].nome;
   inputSenha.value = users[index].senha;
+  
+  
 
   inputNome.addEventListener('keyup', (event) => {
     if (event.key === 'Enter') {
       const novoNome = inputNome.value;
       const novoSenha = inputSenha.value;
 
-      if (novoNome != users[index].nome && verificaNome(novoNome)) {
+      const nomeExistente = users.find(user => user.nome.toLowerCase() === novoNome.toLowerCase());
+    
+      if (nomeExistente && nomeExistente.nome !== users[index].nome) {
         alert("Este nome já está em uso por outro usuário.");
         return;
       }
@@ -169,6 +173,8 @@ const btn = document.getElementById('btn-cadastro')
 btn.addEventListener('click', () => {
   let nome = document.getElementById('name-cadastro').value
   let senha = document.getElementById('senha-cadastro').value
+  nome = nome.toLowerCase()
+  senha = senha.toLowerCase()
 
   if (!verificaNome(nome)) {
     if (senha.length >= 8 && nome.length >= 4) {
