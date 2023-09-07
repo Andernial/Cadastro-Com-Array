@@ -40,7 +40,7 @@ function preencheTable(user, index) {
       <td class="td-tabela"><span id="senha-${index}">${user.senha}</span>
       <input type="text" id="input-senha-${index}" maxlength="15" class="edit">
       </td>
-      <td class="icons-table"> <img src="/assets/icons/pencil.svg" alt="lapis" class="icon-edit" onclick="editarUsuario(${index})"> <img src="/assets/icons/trash.svg" alt="lixeira" class="icon-edit" onclick="excluirUsuario(${index})"></td>
+      <td class="icons-table"> <img src="./assets/icons/pencil.svg" alt="lapis" class="icon-edit" onclick="editarUsuario(${index})"> <img src="./assets/icons/trash.svg" alt="lixeira" class="icon-edit" onclick="excluirUsuario(${index})"></td>
     </tr>
   </table> `
 
